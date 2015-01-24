@@ -1,5 +1,5 @@
 myvimconfig
-===========
+=====================================================================================================
 1.git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 2.copy the .vim directory to /root/.vim # if not using root,just copy it to ~/.vim
 3.copy the vimrc file to /etc/vimrc
