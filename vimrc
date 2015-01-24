@@ -149,7 +149,6 @@ set statusline+=%{SyntasticStatuslineFlag()}
 
 "
 
-"²å¼þÏà¹ØÅäÖÃ
 
 "
 
