@@ -1,0 +1,46 @@
+function FindProxyForURL(url, host) {
+  if (shExpMatch(url,"*.facebook.com/*") ||
+      shExpMatch(url,"*.youtube.com/*") ||
+      shExpMatch(url,"*instagram.com/*") ||
+      shExpMatch(url,"*vimeo.com/*") ||
+      shExpMatch(url,"*.ytimg.com/*") ||
+      shExpMatch(url,"*.wordpress.com/*") ||
+      shExpMatch(url,"*.slideshare.net/*") ||
+      shExpMatch(url,"*.google.com/*") ||
+      shExpMatch(url,"*.google.ca/*") ||
+      shExpMatch(url,"*.google.co.id/*") ||
+      shExpMatch(url,"*.google.co.jp/*") ||
+      shExpMatch(url,"*.google.com.hk/*") ||
+      shExpMatch(url,"*.google*.com/*") ||
+      shExpMatch(url,"*google.com/*") ||
+      shExpMatch(url,"*.gstatic.com/*") ||
+      shExpMatch(url,"*.ggpht.com/*") ||
+      shExpMatch(url,"*.blogger.com/*") ||
+      shExpMatch(url,"*.blogspot.com/*") ||
+      shExpMatch(url,"*.hua.hrsmart.com/*") ||
+      shExpMatch(url,"*.adaptiveplanning.com/*") ||
+      shExpMatch(url,"*.fxall.com/*") ||
+      shExpMatch(url,"*.appspot.com/*") ||
+      shExpMatch(url,"*.dropbox.com/*") ||
+      shExpMatch(url,"*.dropboxstatic.com/*") ||
+      shExpMatch(url,"*.gravatar.com/*") ||
+      shExpMatch(url,"*.rhcloud.com/*") ||
+      shExpMatch(url,"*.cloudfront.net/*") ||
+      shExpMatch(url,"*.businessinsider.com/*") ||
+      shExpMatch(url,"*.bizographics.com/*") ||
+      shExpMatch(url,"*.montent.net/*") ||
+      shExpMatch(url,"*.mail-archive.com/*") ||
+      shExpMatch(url,"*.nr-data.net/*") ||
+      shExpMatch(url,"*.netmng.com/*") ||
+      shExpMatch(url,"*.amazonaws.com/*") ||
+      shExpMatch(url,"*.6park.com/*") ||
+      shExpMatch(url,"*.flickr.com/*") ||
+      shExpMatch(url,"*internal-redhat.icims.com/*") ||
+      shExpMatch(url,"*lwn.net/*") ||
+      shExpMatch(url,"*bit.ly/*") ||
+      shExpMatch(url,"*hola.org/*") ||
+      shExpMatch(url,"*twitter.com/*") ) {
+    return "PROXY squid.redhat.com:3128; DIRECT";
+    }
+  return "DIRECT";
+}
