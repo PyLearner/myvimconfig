@@ -40,7 +40,7 @@ function FindProxyForURL(url, host) {
       shExpMatch(url,"*bit.ly/*") ||
       shExpMatch(url,"*hola.org/*") ||
       shExpMatch(url,"*twitter.com/*") ) {
-    return "PROXY squid.redhat.com:3128; DIRECT";
+    return "PROXY proxy.redhat.com:3128; DIRECT";
     }
   return "DIRECT";
 }
